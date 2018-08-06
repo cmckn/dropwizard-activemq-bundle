@@ -92,7 +92,7 @@ public class ActiveMQReceiverHandlerReliveryTest {
         sender.sendJson("ok1");
         sender.sendJson("ok2");
 
-        Thread.sleep(1000);
+        Thread.sleep(3000);
 
         assertEquals(3+1, errorCount);
         assertEquals(2, okCount);
