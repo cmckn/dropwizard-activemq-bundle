@@ -1,12 +1,11 @@
 Dropwizard ActiveMQ Bundle
 ==================================
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.kjetland.dropwizard/dropwizard-activemq/badge.svg)](http://search.maven.org/#search%7Cga%7C1%7Cdropwizard-activemq)
 
 *Since Dropwizard ActiveMQ Bundle is written in Java 8, your app must also be compiled with Java 8*
 
 Use it when you need to send and receive JSON (jackson) via ActiveMq in your Dropwizard application.
 
-Please have a look at the [Example application](https://github.com/mbknor/dropwizard-activemq-bundle/tree/master/example).
+Please have a look at the [Example application](https://github.com/cmckn/dropwizard-activemq-bundle/tree/master/example).
 
 Change History
 --------------
@@ -101,19 +100,6 @@ Version 0.1 - 20140410
 
 * Initial version
 
-
-Maven
-----------------
-
-Add it as a dependency:
-
-```xml
-    <dependency>
-        <groupId>com.kjetland.dropwizard</groupId>
-        <artifactId>dropwizard-activemq</artifactId>
-        <version> INSERT LATEST VERSION HERE </version>
-    </dependency>
-```
 
 Configuration
 ------------

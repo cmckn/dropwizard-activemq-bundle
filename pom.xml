@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.kjetland.dropwizard</groupId>
+    <groupId>com.darkowl.dropwizard-common</groupId>
     <artifactId>dropwizard-activemq</artifactId>
     <version>0.5.3-SNAPSHOT</version>
 
     <name>dropwizard-activemq</name>
-    <url>https://github.com/mbknor/dropwizard-activemq-bundle</url>
+    <url>https://github.com/cmckn/dropwizard-activemq-bundle</url>
     <description>
         Use it when you need to send and receive JSON via ActiveMQ in your Dropwizard application
     </description>
 
     <developers>
         <developer>
-            <id>mbknor</id>
-            <name>Morten Kjetland</name>
-            <email>mbk@kjetland.com</email>
-            <timezone>+1</timezone>
+            <id>cmckn</id>
+            <name>Carter McKinnon</name>
+            <email>carter.mckinnon@darkowl.com</email>
+            <timezone>-7</timezone>
         </developer>
     </developers>
 
@@ -72,14 +72,6 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-    <distributionManagement>
-        <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
-    </distributionManagement>
-
 
     <build>
         <plugins>
@@ -139,38 +131,13 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-gpg-plugin</artifactId>
-                <version>1.5</version>
-                <executions>
-                    <execution>
-                        <id>sign-artifacts</id>
-                        <phase>verify</phase>
-                        <goals>
-                            <goal>sign</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.sonatype.plugins</groupId>
-                <artifactId>nexus-staging-maven-plugin</artifactId>
-                <version>1.6.7</version>
-                <extensions>true</extensions>
-                <configuration>
-                    <serverId>ossrh</serverId>
-                    <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
-                </configuration>
-            </plugin>
         </plugins>
     </build>
 
     <scm>
-        <connection>scm:git:git@github.com:mbknor/dropwizard-activemq-bundle.git</connection>
-        <developerConnection>scm:git:git@github.com:mbknor/dropwizard-activemq-bundle.git</developerConnection>
-        <url>http://github.com/mbknor/dropwizard-activemq-bundle</url>
+        <connection>scm:git:git@github.com:cmckn/dropwizard-activemq-bundle.git</connection>
+        <developerConnection>scm:git:git@github.com:cmckn/dropwizard-activemq-bundle.git</developerConnection>
+        <url>http://github.com/cmckn/dropwizard-activemq-bundle</url>
     </scm>
 
 </project>
