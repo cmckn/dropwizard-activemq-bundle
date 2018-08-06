@@ -145,9 +145,8 @@ public class ActiveMQReceiverHandlerTest {
                 1);
 
         h.start();
-        Thread.sleep(100);
+        Thread.sleep(1000);
         verify(connection, VerificationModeFactory.times(1)).start();
-        Thread.sleep(200);
         assertTrue(receivedMessages.contains("a"));
         assertTrue(receivedMessages.contains("b"));
         assertTrue(receivedMessages.contains("d"));
@@ -185,7 +184,7 @@ public class ActiveMQReceiverHandlerTest {
                 1);
 
         h.start();
-        Thread.sleep(300);
+        Thread.sleep(1000);
         RECEIVED_EXCEPTIONS.forEach(Throwables::propagate);
         assertNotNull(RECEIVED_OBJECT.get());
         assertEquals(OBJECT, RECEIVED_OBJECT.get());
@@ -222,7 +221,7 @@ public class ActiveMQReceiverHandlerTest {
                 1);
 
         h.start();
-        Thread.sleep(300);
+        Thread.sleep(1000);
         RECEIVED_EXCEPTIONS.forEach(Throwables::propagate);
         assertNotNull(RECEIVED_OBJECT.get());
         assertEquals(OBJECT, RECEIVED_OBJECT.get());
@@ -250,7 +249,7 @@ public class ActiveMQReceiverHandlerTest {
                 1);
 
         h.start();
-        Thread.sleep(300);
+        Thread.sleep(1000);
         assertFalse(RECEIVED_EXCEPTIONS.isEmpty());
         assertNull(RECEIVED_OBJECT.get());
         h.stop();
@@ -270,9 +269,8 @@ public class ActiveMQReceiverHandlerTest {
                 1);
 
         h.start();
-        Thread.sleep(100);
+        Thread.sleep(1000);
         verify(connection, VerificationModeFactory.times(1)).start();
-        Thread.sleep(200);
         assertTrue(receivedMessages.contains("a"));
         assertTrue(receivedMessages.contains("b"));
         assertTrue(receivedMessages.contains("d"));
@@ -296,9 +294,8 @@ public class ActiveMQReceiverHandlerTest {
                 1);
 
         h.start();
-        Thread.sleep(100);
+        Thread.sleep(1000);
         verify(connection, VerificationModeFactory.atLeast(2)).start();
-        Thread.sleep(200);
         assertTrue(receivedMessages.contains("a"));
         assertTrue(receivedMessages.contains("b"));
         assertTrue(receivedMessages.contains("d"));
@@ -323,9 +320,8 @@ public class ActiveMQReceiverHandlerTest {
                 1);
 
         h.start();
-        Thread.sleep(100);
+        Thread.sleep(1000);
         verify(connection, VerificationModeFactory.atLeast(2)).start();
-        Thread.sleep(200);
         assertTrue(receivedMessages.contains("a"));
         assertTrue(receivedMessages.contains("b"));
         assertTrue(receivedMessages.contains("d"));

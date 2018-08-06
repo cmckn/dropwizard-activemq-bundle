@@ -9,9 +9,9 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertTrue;
 
-public class ActiveMQHealthCheckTest {
+public class ActiveMQHttpHealthCheckTest {
 
-    final String url = "tcp://localhost:31219";
+    final String url = "http://localhost:31219";
     BrokerService broker;
 
     @Before
